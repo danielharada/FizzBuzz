@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>FizzBuzz</title>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="FizzBuzz.js" async></script>
+    <link rel="stylesheet" type="text/css" href="fizzBuzz.css" />
+</head>
+<body>
+    <div id="title">
+        <h1>FizzBuzz Problem in Javascript</h1>
+    </div>
+
+    <div id="content">
+        <div id="introText">
+            <h1>Traditional FizzBuzz Problem</h1>
+            <p>The FizzBuzz problem is as follows:  <em>Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.</em></p>
+            <h1>Modified FizzBuzz</h1>
+            <p>This web-app allows the user to pick their own base values for "fizz"ing and "buzz"ing, as well as the maximum value to print up to.</p>
+        </div>
+
+        <div id="inputBoxes">
+            <p>
+                <label for="fizzNum">Fizz</label>
+                <input type="text" id="fizzNum" value="3" /> <span id="fizzWarning" class="warning"></span>
+            </p>
+            <p>
+                <label for="buzzNum">Buzz</label>
+                <input type="text" id="buzzNum" value="5" /> <span id="buzzWarning" class="warning"></span>
+            </p>
+            <p>
+                <label for="maxNum">Max Number</label>
+                <input type="text" id="maxNum" value="100" /> <span id="maxWarning" class="warning"></span>
+            </p>
+            <input type="submit" value="Set Parameters" id="submitButton" />
+        </div>
+
+        <div id="outputBox">
+            <h1>Output</h1>
+            <p id="fizzOutput">
+                <table>
+                    <tr>
+                        <td id="col1"></td>
+                        <td id="col2"></td>
+                        <td id="col3"></td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
